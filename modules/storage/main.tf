@@ -4,6 +4,8 @@ resource "aws_s3_bucket" "insecure-bucket" {
     enabled = true
     mfa_delete = true
   }
+ logging{
+    enabled = true
 }
 
 # resource "aws_s3_bucket_public_access_block" "insecure-bucket" {
