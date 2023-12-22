@@ -23,3 +23,5 @@ resource "aws_ebs_volume" "example" {
     Name = "insecure"
   }
 }
+resource "aws_s3_bucket_logging" "logging" {
+}
